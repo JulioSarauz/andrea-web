@@ -1,0 +1,1 @@
+export const path_bacilica = './../assets/law/lawc.jpg';
