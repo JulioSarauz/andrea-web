@@ -1,6 +1,7 @@
 {
   "name": "andrea",
   "version": "0.0.0",
+  "homepage": "https://juliosarauz.github.io/andrea-web/",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
