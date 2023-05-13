@@ -7,6 +7,7 @@ import { InicioComponent } from './rutas/inicio/inicio.component';
 import { NavComponent } from './componentes/nav/nav.component';
 import { CabeceraComponent } from './componentes/cabecera/cabecera.component';
 import { FormsModule } from '@angular/forms';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
